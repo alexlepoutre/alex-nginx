@@ -3,9 +3,7 @@ name: Cypress Tests with Install Job and UI Chrome Job x 5
 on: [push]
 
 jobs:
-  install:
-  # ...
-
+  
   ui-chrome-tests:
     runs-on: alepoutre/alex-nginx
     container: cypress/browsers:node12.18.3-chrome87-ff82
