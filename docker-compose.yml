@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  web:
+    image: alex-nginx:1.01
+    volumes:
+      - ./templates:/etc/nginx/templates
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_HOST=foobar.com
+      - NGINX_PORT=80
